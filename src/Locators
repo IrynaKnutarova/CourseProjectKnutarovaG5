@@ -1,47 +1,41 @@
 #Student Registration Form
-StudentRegistrationForm.СardName = './/h5[contains(text(),'Forms')]'
-StudentRegistrationForm.Card.PracticeForms = './/div[@class='element-list collapse show']'
-StudentRegistrationForm.Title = './/h5[contains (text(),'Student Registration Form')]’
-StudentRegistrationForm.Input.FirstName = ' .//input[@placeholder='First Name']’
-StudentRegistrationForm.Input.LastName = ' .//input[@placeholder='Last Name']’
+StudentRegistrationForm.СardName = './/div[@class='card mt-4 top-card'][2]'
+StudentRegistrationForm.Header.Forms = './/div[@class='main-header']'
+StudentRegistrationForm.Button.PracticeForm = './/div[@class='element-list collapse show']'
+StudentRegistrationForm.Title = './/*[text()='Student Registration Form']’
+StudentRegistrationForm.Input.FirstName = './/input[@placeholder='First Name']’
+StudentRegistrationForm.Input.LastName = './/input[@placeholder='Last Name']’
 StudentRegistrationForm.Input.Email = ‘.//input[@placeholder='name@example.com']’
-StudentRegistrationForm.RadioButton.GenderFemale = ‘.//input[@name='gender' and @value='Female']’
+StudentRegistrationForm.RadioButton.GenderFemale = ‘.//label[@for='gender-radio-2']’
 StudentRegistrationForm.Input.Mobile = ‘.//input[@autocomplete='off' and @pattern='\d*']’
-StudentRegistrationForm.ComboBox.DateOfBirth = ‘.//div[@class='react-datepicker-wrapper']’
-StudentRegistrationForm.ComboBox.Subject = ‘.//div[@id='subjectsContainer']’
-StudentRegistrationForm.CheckBox.HobbiesSports = ‘.//input[@type='checkbox' and @id='hobbies-checkbox-1']’
-StudentRegistrationForm.CheckBox.HobbiesReading = ‘.//input[@type='checkbox' and @id='hobbies-checkbox-2']’
-StudentRegistrationForm.CheckBox.HobbiesMusic = ‘.//input[@type='checkbox' and @id='hobbies-checkbox-3']’
-StudentRegistrationForm.Input.CurrentAddress = ‘.//textarea[@id='currentAddress']’
-StudentRegistrationForm.DropDownStateAndSity.SelectState = ‘.//div[@id='state']’
-StudentRegistrationForm.DropDownStateAndSity.SelectCity = ‘.//div[@id='city']’
+StudentRegistrationForm.Input.TextareaAddress = ‘.//textarea[@id='currentAddress']’
+StudentRegistrationForm.SubmittingForm = ‘.//div[@class='modal-content']’
 
-#Book Store Application
-BookStoreApplication.СardName = ' .//h5[contains(text(),'Book Store Application')]'
-BookStoreApplication.Сard.BookStore = ‘.//li[@class='btn btn-light active']’
-BookStoreApplication.Link.UndestandingECMAScript6Book = ‘.//span[@id='see-book-Understanding ECMAScript 6']’
-BookStoreApplication.ISBN.UndestandingECMAScript6 = ‘.//label[contains(text(),'9781593277574')]’
-BookStoreApplication.Title.UndestandingECMAScript6 = ‘.//span[@id='see-book-Understanding ECMAScript 6']’
-BookStoreApplication.BackToBookStoreButton = ‘.//div[@class='text-left fullButton']’
+#Browser Window Of Alerts, Frame & Windows /Modal Dialogs/
+BrowserWindowOfAlertsFrameWindows.CardName = './/div[@class='card mt-4 top-card'][3]’
+BookStoreApplication.Button.ModalDialogs = ‘.//span[contains(text(),'Modal Dialogs')]’
+BookStoreApplication.Button.LargeModal = ‘.//button[@class='mt-2 btn btn-primary']’
+BookStoreApplication.ButtonClose = ‘.//button[@class='btn btn-primary']’
 
 #Book Store API
-BookStoreApplication.СardName = './/h5[contains(text(),'Book Store Application')]'
-BookStoreApplication.Сard.BookStoreAPI = ‘.//span[contains(text(),'Book Store API')]’
 BookStoreApplication.AuthorizeButton = ‘.//button[@class='btn authorize unlocked']’
 BookStoreApplication.Input.Username = ‘.//input[@name='username']’
 BookStoreApplication.Input.Password = ‘.//input[@type='password']’
-BookStoreApplication.Button.Autorize = ‘.//div[@class=’auth-container’ and .//h4[text()='Basic authorization']]//button[@type='submit']’
-BookStoreApplication.Button.Close = ‘.//div[@class='auth-container' and .//h4[text()='Basic authorization']]//button[@class='btn modal-btn auth btn-done button']’
+BookStoreApplication.Button.AuthorizeCredentials = ‘.//div[@class='auth-container'
+and .//h4[text()='Basic authorization']]//button[@type='submit' and @class='btn modal-btn auth authorize button']’
+BookStoreApplication.Button.CloseCredentials = ‘.//div[@class='auth-container'
+and .//h4[text()='Basic authorization']]//button[@class='btn modal-btn auth btn-done button']’
+BookStoreApplication.titleBookStoreAPI = ‘.//h2[@class='title']’
 
 #Radio Button Of Elements
-RadioButtonOfElements.СardName = './/h5[contains(text(),'Elements')]'
+RadioButtonOfElements.СardName = './/div[@class='card mt-4 top-card'][1]'
 RadioButtonOfElements.Сard.RadioButton = './/span[contains(text(),'Radio Button')]’
-RadioButtonOfElements.RadioButton,Yes = ‘.//input[@id='yesRadio']’
+RadioButtonOfElements.RadioButtonYes = ‘.//label[@class='custom-control-label' and @for='yesRadio']’
+RadioButtonOfElements.CheckTextYouHaveSelectedYes = ‘.//span[text()='Yes']'
 
-#Browser Window Of Alerts, Frame & Windows
-BrowserWindowOfAlertsFrameWindows.CardName = './/h5[contains(text(),'Alerts, Frame & Windows')]’
-BrowserWindowOfAlertsFrameWindows.Card.BrowserWindows = './/span[contains(text(),'Browser Windows')]’
+#Browser Window Of Alerts, Frame & Windows /Browser Window/
+BrowserWindowOfAlertsFrameWindows.Button.BrowserWindows = './/span[contains(text(),'Browser Windows')]’
 BrowserWindowOfAlertsFrameWindows.Button.NewTab = ‘.//button[@id='tabButton' and @class='btn btn-primary']’
-BrowserWindowOfAlertsFrameWindows.ThisIsASamplePage = ‘.//h1[@id='sampleHeading']’
+BrowserWindowOfAlertsFrameWindows.Message.ThisIsASamplePage = ‘.//h1[text()='This is a sample page']’
 
 

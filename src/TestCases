@@ -1,65 +1,60 @@
-TEST-ATAM-G5-6-1042CP
-Summary: CHECKING STUDENT REGISTRATION FORM
+TEST-CASE_ATAM_G5_6_1042
+Summary: CHECK STUDENT REGISTRATION FORM
 Created: 8/17/2022
 Steps to reproduce:
 1. Follow the link https://demoqa.com
 Expected result: we have to see page with gallery of cards.
-2. Click on Forms card of the page.
+2. Click on Forms Card of the page.
 3. Click on button Practice Form under the button Forms on the left of the page.
 Expected result: we have to see Student Registration Form.
-4. Write Name Susanna in the field First Name.
-5. Write Name Clarke in the field Last Name.
-6. Write Email sylfa@ukr.net.
-7. Choose Female on the radio button Gender.
-8. Write Mobile 2805897131.
-9. Choose Date of Birth 1 Nov 1959 in the combo box menu.
-10. Choose Subject Social Studies in the combo box menu.
-11. Click on Sports, Reading, Music on the check box Hobbies.
-12. Write Hucknall Rd, Nottingham, United Kindom in the field Current Address.
-13. Choose NCR on the drop down list State and City.
-14. Choose Lucknow on the drop down list State and City.
-15. Click on Submit.
+4. Check we see Student Registration Form - we have to see title 'Student Registration Form' on the display.
+5. Write Name Susanna in the field First Name.
+6. Write Name Clarke in the field Last Name.
+7. Write Email hghgfdhgg@ukr.net.
+8. Choose Female on the radio button Gender.
+9. Write Mobile 2805897131.
+10. Write Hucknall Rd, Nottingham, United Kingdom in the field Current Address.
+11. Click on Submit.
 Expected result: we must have see windows with title “Thanks for submitting the form” with our typed information.
 Post conditions: click on Close. We have to see that window closed and Student Registration Form is clean.
 
 
-TEST-ATAM-G5-6-631CP
-Summary: CHECKING DESCRIPTION OF BOOK IN BOOK STORE APPLICATION
+TEST-CASE_ATAM-G5-6-631CP
+Summary: CHECK MODAL DIALOGS IN ALERT, FRAME AND WINDOWS
 Created: 8/17/2022
 Steps to reproduce:
 1. Follow the link https://demoqa.com
 Expected result: we have to see page with gallery of cards.
-2. Click on Book Store Application card on the page.
-Expected result: we follow on page with drop down list on the left of the page.
-3. Click on Book Store in the drop down list under the Book Store Application.
-Expected result: we have to see gallery with books title.
-4. Click on “Undestanding ECMAScript 6” book.
-Expected result: we have to see description of “Undestanding ECMAScript 6” book’s.
-5. Click on button Back To Book Store.
+2. Click on Alerts, Frame & Windows card on the page.
+Expected result: we have to see on the center of page next text: “Alerts, Frame & Windows” and under that: “Please
+select an item from left to start practice.” Alerts, Frame & Windows with drop down list is located in the left part
+of page.
+3. Click on button Modal Dialogs.
+Expected result: we have to see two buttons Small modal and Large modal.
+4. Click on button Large modal.
+Expected result: we have to see modal window with button Close.
+5. Click on button Close.
+Expected result: Modal window closed and we have to see two button: Small modal and Large modal.
 
 
-TEST-ATAM-G5-6-650CP
-Summary: CHECKING BOOK STORE API
+TEST-CASE_ATAM-G5-6-650CP
+Summary: CHECK BOOK STORE API
 Created: 8/17/2022
 Steps to reproduce:
-1. Follow the link https://demoqa.com
-Expected result: we have to see page with gallery of cards.
-2. Click on Book Store Application card on the page.
-Expected result: on the left we have to see drop down list with four sections: Login, Book Store, Profile, Book Store API.
-3. Click on Book Store API in the drop down list.
-Expected result: we have to see page with button Autorize on the right of the page.
-4. Click on Autorize button.
-Expected result: we have to see Available autorizations window.
-5. Write Inkognito in the field Username in the Basic authorization form.
-6. Write mn88iq in the field Password in the Basic authorization form.
-7. Click button Authorize in Available autorizations form.
+1. Follow the link https://demoqa.com/swagger/
+Expected result: we follow to page with button Authorize on the right.
+2. Click on button Authorize.
+Expected result: we have to see Available authorizations window.
+3. Write Inkognito in the field Username in the Basic authorization form.
+4. Write mn88iq in the field Password in the Basic authorization form.
+5. Click button Authorize in Available authorizations form.
 Expected result: we have to see Basic authorization form with word “Authorized”, our Username and Password.
-8. Click on button Close.
+6. Click on button Close.
 Expected result: we follow to Book Store API page.
 
 
-TEST-ATAM-G5-6-827CP
-Summary: CHECKING RADIO BUTTON OF ELEMENTS
+TEST-CASE_ATAM-G5-6-827CP
+Summary: CHECK THE RADIO BUTTON OF ELEMENTS
 Created: 8/17/2022
 Steps to reproduce:
 1. Follow the link https://demoqa.com
@@ -71,15 +66,18 @@ Expected result: we have to see text “Do you like the site?” and radio butto
 Expected result: we have to see text: “You have selected Yes”.
 
 
-TEST-ATAM-G5-6-838CP
-Summary: CHECKING BROWSER WINDOW OF ALERTS, FRAME & WINDOWS
+TEST-CASE_ATAM-G5-6-838CP
+Summary: CHECK BROWSER WINDOW OF ALERTS, FRAME & WINDOWS
 Created: 8/17/2022
 Steps to reproduce:
 1. Follow the link https://demoqa.com
 Expected result: we have to see page with gallery of cards.
 2. Click on Alerts, Frame & Windows card on the page.
-Expected result: we have to see on the center of page next text: “Alerts, Frame & Windows” and under that: “Please select an item from left to start practice.” Alerts, Frame & Windows with drop down list is located in the left part of page.
+Expected result: we have to see on the center of page next text: “Alerts, Frame & Windows” and under that: “Please
+select an item from left to start practice.” Alerts, Frame & Windows with drop down list is located in the left part
+of page.
 3. Click on button Browser Windows in the drop down list.
-Expected result: we have to see page with text: “Browser Windows” and under that three buttons to choose from: New Tab, New Window, New Window Message.
+Expected result: we have to see page with text: “Browser Windows” and under that three buttons to choose from: New Tab,
+New Window, New Window Message.
 4. Click on button New tab.
 Expected result: we follow to page with text: “This is a sample page”.
